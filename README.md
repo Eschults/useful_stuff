@@ -18,7 +18,7 @@ git checkout unmergeable_branch
 git merge master
 
 # now you've fetched all conflicts locally, time to solve them
-# open sublime and solve conflicts (locate them with cmd + maj + f <<<<<<<)
+# open sublime and solve conflicts (locate them with cmd + shift + f <<<<<<<)
 
 # commit your code
 git add .
