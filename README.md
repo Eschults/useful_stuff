@@ -2,7 +2,7 @@
 Memo for my beloved students
 
 ### Conflicts solving
-When you can't merge a PR due to conflicts on an `unmergeable_branch`, follow this process:
+When you can't merge a PR due to conflicts in an `unmergeable_branch`, follow this process:
 
 ```ruby
 # checkout your local master branch
