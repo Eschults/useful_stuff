@@ -1,7 +1,7 @@
 # useful_stuff
 Memo for my beloved students
 
-### Conflict solving
+### Conflicts solving
 When you can't merge a PR due to conflicts on an `unmergeable_branch`, follow this process:
 
 ```ruby
