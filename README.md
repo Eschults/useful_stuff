@@ -28,9 +28,10 @@ search in project                          # cmd + shift + f
 add package                                # cmd + shift + p
 add indentation                            # tab
 remove indentation                         # shift + tab
-move text cursor to next word              #+ →
-move text cursor to previous word          # cmd + ←
-move text cusrsor to end of line           # cmd + shift
+move text cursor to next word              # alt + →
+move text cursor to previous word          # alt + ←
+move text cursor to end of line            # cmd + →
+move text cursor to beginning of line      # cmd + ←
 ```
 
 ### Conflicts solving
