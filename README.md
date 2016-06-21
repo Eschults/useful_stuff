@@ -19,8 +19,18 @@ from one window to another (same program)  # cmd + `
 
 #### Sublime Text
 ```ruby
-open a file in current project             # cmd + p (or cmd + t) then type beginning of filename then Enter
-move a line upwards in file                # ctrl + cmd + 
+open a file in current project             # cmd + p (or cmd + t)
+move a line upwards in file                # ctrl + cmd + ↑
+move a line downwards in file              # ctrl + cmd + ↓
+(un)comment lines                          # cmd + /
+search in file                             # cmd + f
+search in project                          # cmd + shift + f
+add package                                # cmd + shift + p
+add indentation                            # tab
+remove indentation                         # shift + tab
+move text cursor to next word              #+ →
+move text cursor to previous word          # cmd + ←
+move text cusrsor to end of line           # cmd + shift
 ```
 
 ### Conflicts solving
