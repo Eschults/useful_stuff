@@ -1,6 +1,28 @@
 # useful_stuff
 Memo for my beloved students
 
+### Keyboard's shortcuts (Mac) 
+#### Special characters
+```ruby
+{ # alt + (
+} # alt + )
+[ # alt + shift + (
+] # alt + shift + )
+| # alt + shift + l
+```
+
+#### Navigate
+```ruby
+from one program to another                # cmd + tab
+from one window to another (same program)  # cmd + `
+```
+
+#### Sublime Text
+```ruby
+open a file in current project             # cmd + p (or cmd + t) then type beginning of filename then Enter
+move a line upwards in file                # ctrl + cmd + 
+```
+
 ### Conflicts solving
 When you can't merge a PR due to conflicts in an `unmergeable_branch`, follow this process:
 
