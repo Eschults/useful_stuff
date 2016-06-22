@@ -32,6 +32,8 @@ move text cursor to next word              # alt + →
 move text cursor to previous word          # alt + ←
 move text cursor to end of line            # cmd + →
 move text cursor to beginning of line      # cmd + ←
+close tab                                  # cmd + w
+reopen last tab closed                     # cmd + shift + t
 ```
 
 #### Terminal
