@@ -46,13 +46,13 @@ reach end of line                          # ctrl + e
 When you can't merge a PR due to conflicts in an `unmergeable_branch`, follow this process:
 
 ```ruby
-# checkout your local master branch
+# go to your local master branch
 git checkout master
 
 # update your master branch locally with github's master
 git pull origin master
 
-# checkout unmergeable_branch
+# go back to unmergeable_branch
 git checkout unmergeable_branch
 
 # merger master in unmergeable branch to solve conflicts locally
