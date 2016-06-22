@@ -34,6 +34,14 @@ move text cursor to end of line            # cmd + →
 move text cursor to beginning of line      # cmd + ←
 ```
 
+#### Terminal
+```ruby
+open a new tab                             # cmd + t
+close tab                                  # cmd + w
+reach beginning of line                    # ctrl + a
+reach end of line                          # ctrl + e
+```
+
 ### Conflicts solving
 When you can't merge a PR due to conflicts in an `unmergeable_branch`, follow this process:
 
@@ -58,10 +66,10 @@ git add .
 git commit -m "conflict solving"
 git push origin unmergeable_branch
 
-# open your PR in github to merge it
+# open your PR on github to merge it
 hub browse
 
-# merge your PR in github
+# merge your PR on github
 
 # go back to your terminal and update your local master with merged files
 git checkout master
