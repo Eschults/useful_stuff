@@ -44,6 +44,32 @@ reach beginning of line                    # ctrl + a
 reach end of line                          # ctrl + e
 ```
 
+### Keyboard's shortcuts (LINUX) 
+
+#### Sublime Text
+```ruby
+open a file in current project             # ctrl + p
+move a line upwards in file                # ctrl + shift + ↑
+move a line downwards in file              # ctrl + shift + ↓
+(un)comment lines                          # ctrl + shift + :
+search in file                             # ctrl + f
+search in project                          # ctrl + shift + f
+add package                                # ctrl + shift + p
+add indentation                            # tab
+remove indentation                         # shift + tab
+move text cursor to next word              # alt + →
+move text cursor to previous word          # alt + ←
+close tab                                  # ctrl + w
+reopen last tab closed                     # ctrl + shift + t
+```
+
+#### Terminal
+```ruby
+open a new tab                             # ctrl + shift + t
+close tab                                  # ctrl + shift + w
+clear window                               # ctrl + L (or type "clear" in terminal)
+```
+
 ### Conflicts solving
 When you can't merge a PR due to conflicts in an `unmergeable_branch`, follow this process:
 
