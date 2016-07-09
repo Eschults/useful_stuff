@@ -1,7 +1,7 @@
 # useful_stuff
 Memo for my beloved students
 
-### Keyboard's shortcuts (Mac) 
+### Keyboard's shortcuts (Mac)
 #### Special characters
 ```ruby
 { # alt + (
@@ -40,11 +40,14 @@ reopen last tab closed                     # cmd + shift + t
 ```ruby
 open a new tab                             # cmd + t
 close tab                                  # cmd + w
+clear window (keeping history)             # ctrl + l
+clear window (losing history)              # cmd + k
 reach beginning of line                    # ctrl + a
 reach end of line                          # ctrl + e
+erase the whole line                       # ctrl + u
 ```
 
-### Keyboard's shortcuts (LINUX) 
+### Keyboard's shortcuts (LINUX)
 
 #### Sublime Text
 ```ruby
