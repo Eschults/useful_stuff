@@ -9,6 +9,7 @@ Memo for my beloved students
 [ # alt + shift + (
 ] # alt + shift + )
 | # alt + shift + l
+~ # alt + n
 ```
 
 #### Navigate
