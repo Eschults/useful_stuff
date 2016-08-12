@@ -36,6 +36,8 @@ move text cursor to end of line            # cmd + →
 move text cursor to beginning of line      # cmd + ←
 close tab                                  # cmd + w
 reopen last tab closed                     # cmd + shift + t
+navigate to tab on the right               # cmd + alt + →
+navigate to tab on the left                # cmd + alt + ←
 ```
 
 #### Terminal
@@ -47,6 +49,19 @@ clear window (losing history)              # cmd + k
 reach beginning of line                    # ctrl + a
 reach end of line                          # ctrl + e
 erase the whole line                       # ctrl + u
+```
+
+#### Chrome
+```ruby
+open developer tools (elements)            # cmd + alt + i
+open developer tools (console)             # cmd + alt + j
+change docking location                    # cmd + shift + d
+navigate to tab on the right               # cmd + alt + →
+navigate to tab on the left                # cmd + alt + ←
+open a new tab                             # cmd + t
+focus on address bar                       # cmd + l
+close tab                                  # cmd + w
+reopen last tab closed                     # cmd + shift + t
 ```
 
 ### Keyboard's shortcuts (LINUX)
