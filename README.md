@@ -56,6 +56,7 @@ erase the whole line                       # ctrl + u
 open developer tools (elements)            # cmd + alt + i
 open developer tools (console)             # cmd + alt + j
 change docking location                    # cmd + shift + d
+
 navigate to tab on the right               # cmd + alt + →
 navigate to tab on the left                # cmd + alt + ←
 open a new tab                             # cmd + t
