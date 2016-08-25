@@ -127,3 +127,16 @@ git pull origin master
 # create a new branch for next feature
 git checkout -b next_feature
 ```
+
+### Frequent error messages
+Let's have a look at the most frequent errors students face, and how to solve them.
+
+#### ``NoMethodError: undefined method `some_method' for nil:NilClass``
+This one is the most common. You need to read it **entirely**, because the interesting part is `for nil:NilClass`.
+It doesn't mean that `some_method` is undefined! It means that `some_object` **on which you call** `.some_method` is nil!
+For instance:
+```ruby
+recipe.name
+# => NoMethodError: undefined method `name' for nil:NilClass
+`recipe` is nil! It shouldn't!
+```
