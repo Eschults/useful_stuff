@@ -1,6 +1,12 @@
 # useful_stuff
 Memo for my beloved students
 
+### Summary
+- [Keyboard's shortcuts (Mac)](#keyboards-shortcuts-mac)
+- [Keyboard's shortcuts (LINUX)](#keyboards-shortcuts-linux)
+- [Frequently misunderstood error messages](#frequently-misunderstood-error-messages)
+- [Conflicts solving](#conflicts-solving)
+
 ### Keyboard's shortcuts (Mac)
 #### Special characters
 ```ruby
