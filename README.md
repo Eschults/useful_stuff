@@ -138,12 +138,25 @@ full_name("boris")
 
 #### Rails
 
+#### `PG::Error FATAL "myapp_development" does not exist`
+Just run `rails db:create`
+
+#### `ActiveRecord::PendingMigrationError Migrations are pending`
+Just run `rails db:migrate`.
+
 #### `PG::ConnectionBad - could not connect to server: No such file or directory Is the server running locally and accepting connections on Unix domain socket "/tmp/.s.PGSQL.5432"?`
 It means that PG did not exit gracefully last time your computer was shut off.
 Run the following in your terminal:
 ```bash
 rm /usr/local/var/postgres/postmaster.pid
 ```
+
+#### `NameError: uninitialized constant ClassName`
+In most cases, you'll get this error message when you're implementing a gem and you forgot to restart your `rails server` after running `bundle install`.
+
+#### `ResourcesController#action is missing a template for this request format and variant.`
+After executing the code in a controller's action, Rails conventionnally renders the template named `action.html.erb` in `app/views/resources`.
+It thus means you forgot to generate action's associated view, that you misspelled its filename, or that you misplaced it.
 
 ### Conflicts solving
 When you can't merge a PR due to conflicts in an `unmergeable_branch`, follow this process:
