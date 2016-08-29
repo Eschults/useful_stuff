@@ -91,44 +91,11 @@ close tab                                  # ctrl + shift + w
 clear window                               # ctrl + L (or type "clear" in terminal)
 ```
 
-### Conflicts solving
-When you can't merge a PR due to conflicts in an `unmergeable_branch`, follow this process:
+### Frequently misunderstood error messages
+The first advice I'll throw here is to **read patiently, entirely, twice** the error message when one occurs.
+This can get tricky when you read it from a tiny terminal window, so start by opening it wide to have a clear look at its face.
 
-```ruby
-# go to your local master branch
-git checkout master
-
-# update your master branch locally with github's master
-git pull origin master
-
-# go back to unmergeable_branch
-git checkout unmergeable_branch
-
-# merger master in unmergeable branch to solve conflicts locally
-git merge master
-
-# now you've fetched all conflicts locally, time to solve them
-# open sublime and solve conflicts (locate them with cmd + shift + f <<<<<<<)
-
-# commit your code
-git add .
-git commit -m "conflict solving"
-git push origin unmergeable_branch
-
-# open your PR on github to merge it
-hub browse
-
-# merge your PR on github
-
-# go back to your terminal and update your local master with merged files
-git checkout master
-git pull origin master
-
-# create a new branch for next feature
-git checkout -b next_feature
-```
-
-### Frequent error messages
+#### Ruby
 
 #### ``NoMethodError: undefined method `some_method' for some_object:SomeType``
 It means that `some_object` **on which you call** `.some_method` is not of the right type.
@@ -169,11 +136,50 @@ full_name("boris")
 # => ArgumentError: wrong number of arguments (given 1, expected 2)
 ```
 
+#### Rails
+
 #### `PG::ConnectionBad - could not connect to server: No such file or directory Is the server running locally and accepting connections on Unix domain socket "/tmp/.s.PGSQL.5432"?`
 It means that PG did not exit gracefully last time your computer was shut off.
 Run the following in your terminal:
 ```bash
 rm /usr/local/var/postgres/postmaster.pid
+```
+
+### Conflicts solving
+When you can't merge a PR due to conflicts in an `unmergeable_branch`, follow this process:
+
+```ruby
+# go to your local master branch
+git checkout master
+
+# update your master branch locally with github's master
+git pull origin master
+
+# go back to unmergeable_branch
+git checkout unmergeable_branch
+
+# merger master in unmergeable branch to solve conflicts locally
+git merge master
+
+# now you've fetched all conflicts locally, time to solve them
+# open sublime and solve conflicts (locate them with cmd + shift + f <<<<<<<)
+
+# commit your code
+git add .
+git commit -m "conflict solving"
+git push origin unmergeable_branch
+
+# open your PR on github to merge it
+hub browse
+
+# merge your PR on github
+
+# go back to your terminal and update your local master with merged files
+git checkout master
+git pull origin master
+
+# create a new branch for next feature
+git checkout -b next_feature
 ```
 
 ### Going further
