@@ -148,4 +148,4 @@ rm /usr/local/var/postgres/postmaster.pid
 ### Going further
 
 #### [10 common mistakes using Rails](https://www.toptal.com/ruby-on-rails/top-10-mistakes-that-rails-programmers-make)
-#### [The Vital Guide to Ruby on Rails Interviewing](https://www.toptal.com/ruby-on-rails)
+#### [The Vital Guide to Ruby on Rails Interviewing](https://www.toptal.com/ruby-on-rails#skill_article_content_title)
