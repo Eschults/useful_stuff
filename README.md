@@ -129,14 +129,18 @@ git checkout -b next_feature
 ```
 
 ### Frequent error messages
-Let's have a look at the most frequent errors students face, and how to solve them.
 
-#### ``NoMethodError: undefined method `some_method' for nil:NilClass``
-This one is the most common. You need to read it **entirely**, because the interesting part is `for nil:NilClass`.
-It doesn't mean that `some_method` is undefined! It means that `some_object` **on which you call** `.some_method` is nil!
-For instance:
+##### ``NoMethodError: undefined method `some_method' for nil:NilClass``
+It doesn't mean that `some_method` is undefined, it means that `some_object` **on which you call** `.some_method` is nil:
 ```ruby
 recipe.name
 # => NoMethodError: undefined method `name' for nil:NilClass
-`recipe` is nil! It shouldn't!
+# `recipe` is nil, it shouldn't, fix it
+```
+
+##### `PG::ConnectionBad - could not connect to server: No such file or directory Is the server running locally and accepting connections on Unix domain socket "/tmp/.s.PGSQL.5432"?`
+It means that PG did not exit gracefully last time your computer was shut off.
+Run the following in your terminal:
+```bash
+rm /usr/local/var/postgres/postmaster.pid
 ```
