@@ -130,15 +130,17 @@ git checkout -b next_feature
 
 ### Frequent error messages
 
-##### ``NoMethodError: undefined method `some_method' for nil:NilClass``
+#### ``NoMethodError: undefined method `some_method' for nil:NilClass``
 It doesn't mean that `some_method` is undefined, it means that `some_object` **on which you call** `.some_method` is nil:
 ```ruby
 recipe.name
 # => NoMethodError: undefined method `name' for nil:NilClass
-# `recipe` is nil, it shouldn't, fix it
+# `recipe` is nil, it shouldn't!
 ```
 
-##### `PG::ConnectionBad - could not connect to server: No such file or directory Is the server running locally and accepting connections on Unix domain socket "/tmp/.s.PGSQL.5432"?`
+
+
+#### `PG::ConnectionBad - could not connect to server: No such file or directory Is the server running locally and accepting connections on Unix domain socket "/tmp/.s.PGSQL.5432"?`
 It means that PG did not exit gracefully last time your computer was shut off.
 Run the following in your terminal:
 ```bash
