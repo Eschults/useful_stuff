@@ -138,6 +138,35 @@ recipe.name
 # `recipe` is nil, it shouldn't!
 ```
 
+#### `TypeError: SomeType can't be coerced into SomeOtherType`
+It means that you're trying to mix apples and oranges. 
+```ruby
+1 + nil
+# => TypeError: nil can't be coerced into Fixnum
+
+2 + "2"
+# => TypeError: String can't be coerced into Fixnum
+```
+
+#### `TypeError: no implicit conversion of SomeType into SomeOtherType`
+Its cousin.
+```ruby
+"2" + 2
+# => TypeError: no implicit conversion of Fixnum into String
+```
+
+#### `ArgumentError: wrong number of arguments (given N, expected M)`
+It means that you're calling a method that takes M parameters with N arguments.
+Either your definition of that method is wrong, either you're calling it with the wrong number of arguments.
+```ruby
+def full_name(first_name, last_name)
+  return first_name.capitalize + " " + last_name.capitalize
+end
+
+full_name("boris")
+# => ArgumentError: wrong number of arguments (given 1, expected 2)
+```
+
 #### `PG::ConnectionBad - could not connect to server: No such file or directory Is the server running locally and accepting connections on Unix domain socket "/tmp/.s.PGSQL.5432"?`
 It means that PG did not exit gracefully last time your computer was shut off.
 Run the following in your terminal:
