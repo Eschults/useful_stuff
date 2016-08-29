@@ -138,11 +138,14 @@ recipe.name
 # `recipe` is nil, it shouldn't!
 ```
 
-
-
 #### `PG::ConnectionBad - could not connect to server: No such file or directory Is the server running locally and accepting connections on Unix domain socket "/tmp/.s.PGSQL.5432"?`
 It means that PG did not exit gracefully last time your computer was shut off.
 Run the following in your terminal:
 ```bash
 rm /usr/local/var/postgres/postmaster.pid
 ```
+
+### Going further
+
+#### [10 common mistakes using Rails](https://www.toptal.com/ruby-on-rails/top-10-mistakes-that-rails-programmers-make)
+#### [The Vital Guide to Ruby on Rails Interviewing](https://www.toptal.com/ruby-on-rails)
