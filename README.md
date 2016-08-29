@@ -1,7 +1,7 @@
 # useful_stuff
 Memo for my beloved students
 
-### Summary
+## Summary
 - [Keyboard's shortcuts (Mac)](#keyboards-shortcuts-mac)
   - [Special characters](#special-characters)
   - [Navigate](#navigate)
@@ -9,6 +9,8 @@ Memo for my beloved students
   - [Terminal](#terminal)
   - [Chrome](#chrome)
 - [Keyboard's shortcuts (LINUX)](#keyboards-shortcuts-linux)
+  - [Sublime Text](#sublime-text-1)
+  - [Terminal](#terminal-1)
 - [Frequently misunderstood error messages](#frequently-misunderstood-error-messages)
   - [NoMethodError: undefined method `some_method' for nil:NilClass](#nomethoderror-undefined-method-some_method-for-some_objectsometype)
   - [nil can't be coerced into Fixnum](#typeerror-sometype-cant-be-coerced-into-someothertype)
@@ -20,9 +22,10 @@ Memo for my beloved students
   - [NameError: uninitialized constant ClassName](#nameerror-uninitialized-constant-classname)
   - [Missing template](#resourcescontrolleraction-is-missing-a-template-for-this-request-format-and-variant)
 - [Conflicts solving](#conflicts-solving)
+- [Going further](#going-further)
 
-### Keyboard's shortcuts (Mac)
-#### Special characters
+## Keyboard's shortcuts (Mac)
+### Special characters
 ```ruby
 { # alt + (
 } # alt + )
@@ -33,13 +36,13 @@ Memo for my beloved students
 \ # alt + /
 ```
 
-#### Navigate
+### Navigate
 ```ruby
 from one program to another                # cmd + tab
 from one window to another (same program)  # cmd + `
 ```
 
-#### Sublime Text
+### Sublime Text
 ```ruby
 open a file in current project             # cmd + p (or cmd + t)
 move a line upwards in file                # ctrl + cmd + ↑
@@ -60,7 +63,7 @@ navigate to tab on the right               # cmd + alt + →
 navigate to tab on the left                # cmd + alt + ←
 ```
 
-#### Terminal
+### Terminal
 ```ruby
 open a new tab                             # cmd + t
 close tab                                  # cmd + w
@@ -71,7 +74,7 @@ reach end of line                          # ctrl + e
 erase the whole line                       # ctrl + u
 ```
 
-#### Chrome
+### Chrome
 ```ruby
 open developer tools (elements)            # cmd + alt + i
 open developer tools (console)             # cmd + alt + j
@@ -85,9 +88,9 @@ close tab                                  # cmd + w
 reopen last tab closed                     # cmd + shift + t
 ```
 
-### Keyboard's shortcuts (LINUX)
+## Keyboard's shortcuts (LINUX)
 
-#### Sublime Text
+### Sublime Text
 ```ruby
 open a file in current project             # ctrl + p
 move a line upwards in file                # ctrl + shift + ↑
@@ -104,18 +107,18 @@ close tab                                  # ctrl + w
 reopen last tab closed                     # ctrl + shift + t
 ```
 
-#### Terminal
+### Terminal
 ```ruby
 open a new tab                             # ctrl + shift + t
 close tab                                  # ctrl + shift + w
 clear window                               # ctrl + L (or type "clear" in terminal)
 ```
 
-### Frequently misunderstood error messages
+## Frequently misunderstood error messages
 The first advice I'll throw here is to **read patiently, entirely, twice** the error message when one occurs.
 This can get tricky when you read it from a tiny terminal window, so start by opening it wide to have a clear look at its face.
 
-#### Ruby
+### Ruby
 
 #### ``NoMethodError: undefined method `some_method' for some_object:SomeType``
 It means that `some_object` **on which you call** `.some_method` is not of the right type.
@@ -156,7 +159,7 @@ full_name("boris")
 # => ArgumentError: wrong number of arguments (given 1, expected 2)
 ```
 
-#### Rails
+### Rails
 
 #### `PG::Error FATAL "myapp_development" does not exist`
 Just run `rails db:create`
@@ -178,7 +181,7 @@ In most cases, you'll get this error message when you're implementing a gem and 
 After executing the code in a controller's action, Rails conventionnally renders the template named `action.html.erb` in `app/views/resources`.
 It thus means you forgot to generate action's associated view, that you misspelled its filename, or that you misplaced it.
 
-### Conflicts solving
+## Conflicts solving
 When you can't merge a PR due to conflicts in an `unmergeable_branch`, follow this process:
 
 ```ruby
@@ -215,7 +218,7 @@ git pull origin master
 git checkout -b next_feature
 ```
 
-### Going further
+## Going further
 
 #### [10 common mistakes using Rails](https://www.toptal.com/ruby-on-rails/top-10-mistakes-that-rails-programmers-make)
 #### [The Vital Guide to Ruby on Rails Interviewing](https://www.toptal.com/ruby-on-rails#skill_article_content_title)
