@@ -3,8 +3,22 @@ Memo for my beloved students
 
 ### Summary
 - [Keyboard's shortcuts (Mac)](#keyboards-shortcuts-mac)
+  - [Special characters](#special-characters)
+  - [Navigate](#navigate)
+  - [Sublime Text](#sublime-text)
+  - [Terminal](#terminal)
+  - [Chrome](#chrome)
 - [Keyboard's shortcuts (LINUX)](#keyboards-shortcuts-linux)
 - [Frequently misunderstood error messages](#frequently-misunderstood-error-messages)
+  - [NoMethodError: undefined method `some_method' for nil:NilClass](#nomethoderror-undefined-method-some_method-for-some_objectsometype)
+  - [nil can't be coerced into Fixnum](#typeerror-sometype-cant-be-coerced-into-someothertype)
+  - [No implicit conversion of nil Into Fixnum](#typeerror-no-implicit-conversion-of-sometype-into-someothertype)
+  - [Wrong number of arguments](#argumenterror-wrong-number-of-arguments-given-n-expected-m)
+  - [FATAL "myapp_development" does not exist](#pgerror-fatal-myapp_development-does-not-exist)
+  - [Pending Migrations](#activerecordpendingmigrationerror-migrations-are-pending)
+  - [PG::ConnectionBad](#pgconnectionbad---could-not-connect-to-server-no-such-file-or-directory-is-the-server-running-locally-and-accepting-connections-on-unix-domain-socket-tmpspgsql5432)
+  - [NameError: uninitialized constant ClassName](#nameerror-uninitialized-constant-classname)
+  - [Missing template](#resourcescontrolleraction-is-missing-a-template-for-this-request-format-and-variant)
 - [Conflicts solving](#conflicts-solving)
 
 ### Keyboard's shortcuts (Mac)
