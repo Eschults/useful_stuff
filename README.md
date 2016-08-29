@@ -130,8 +130,10 @@ git checkout -b next_feature
 
 ### Frequent error messages
 
-#### ``NoMethodError: undefined method `some_method' for nil:NilClass``
-It doesn't mean that `some_method` is undefined, it means that `some_object` **on which you call** `.some_method` is nil:
+#### ``NoMethodError: undefined method `some_method' for some_object:SomeType``
+It means that `some_object` **on which you call** `.some_method` is not of the right type.
+You'll get this error if you try to call a `String` instance method on a `Fixnum` for instance.
+Its most frequent expression is when `some_object` is nil:
 ```ruby
 recipe.name
 # => NoMethodError: undefined method `name' for nil:NilClass
