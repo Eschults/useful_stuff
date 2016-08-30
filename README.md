@@ -121,18 +121,22 @@ This can get tricky when you read it from a tiny terminal window, so start by op
 ### Ruby
 
 #### ``NoMethodError: undefined method `some_method' for some_object:SomeType``
-It means that `some_object` **on which you call** `.some_method` is not of the right type.
-You'll get this error if you try to call a `String` instance method on a `Fixnum` for instance.
-Its most frequent expression is when `some_object` is nil:
+
 ```ruby
+# It means that `some_object` **on which you call** `.some_method` is not of the right type.
+# You'll get this error if you try to call a `String` instance method on a `Fixnum` for instance.
+# Its most frequent expression is when `some_object` is nil:
+
 recipe.name
 # => NoMethodError: undefined method `name' for nil:NilClass
 # `recipe` is nil, it shouldn't!
 ```
 
 #### `TypeError: SomeType can't be coerced into SomeOtherType`
-It means that you're trying to mix apples and oranges. 
+
 ```ruby
+# It means that you're trying to mix apples and oranges. 
+
 1 + nil
 # => TypeError: nil can't be coerced into Fixnum
 
@@ -141,16 +145,20 @@ It means that you're trying to mix apples and oranges.
 ```
 
 #### `TypeError: no implicit conversion of SomeType into SomeOtherType`
-Its cousin.
+
 ```ruby
+# Its cousin.
+
 "2" + 2
 # => TypeError: no implicit conversion of Fixnum into String
 ```
 
 #### `ArgumentError: wrong number of arguments (given N, expected M)`
-It means that you're calling a method that takes M parameters with N arguments.
-Either your definition of that method is wrong, either you're calling it with the wrong number of arguments.
+
 ```ruby
+# It means that you're calling a method that takes M parameters with N arguments.
+# Either your definition of that method is wrong, either you're calling it with the wrong number of arguments.
+
 def full_name(first_name, last_name)
   return first_name.capitalize + " " + last_name.capitalize
 end
