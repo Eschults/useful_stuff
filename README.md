@@ -170,15 +170,22 @@ full_name("boris")
 ### Rails
 
 #### `PG::Error FATAL "myapp_development" does not exist`
-Just run `rails db:create`
+
+```ruby
+# Just run `rails db:create` in your terminal.
+```
 
 #### `ActiveRecord::PendingMigrationError Migrations are pending`
-Just run `rails db:migrate`.
+```ruby
+# Just run `rails db:migate` in your terminal.
+```
 
 #### `PG::ConnectionBad - could not connect to server: No such file or directory Is the server running locally and accepting connections on Unix domain socket "/tmp/.s.PGSQL.5432"?`
-It means that PG did not exit gracefully last time your computer was shut off.
-Run the following in your terminal:
+
 ```bash
+# It means that PG did not exit gracefully last time your computer was shut off.
+# Run the following in your terminal:
+
 rm /usr/local/var/postgres/postmaster.pid
 ```
 
