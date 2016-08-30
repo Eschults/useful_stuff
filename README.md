@@ -192,14 +192,17 @@ rm /usr/local/var/postgres/postmaster.pid
 #### `NameError: uninitialized constant ClassName`
 
 ```ruby
-In most cases, you'll get this error message when you're implementing a gem and you forgot to restart your `rails server` after running `bundle install`.
+# In most cases, you'll get this error message when you're implementing a gem 
+# and you forgot to restart your `rails server` after running `bundle install`.
 ```
 
 #### `ResourcesController#action is missing a template for this request format and variant.`
 
 ```ruby
-After executing the code in a controller's action, Rails conventionnally renders the template named `action.html.erb` in `app/views/resources`.
-It thus means you forgot to generate action's associated view, that you misspelled its filename, or that you misplaced it.
+# After executing the code in a controller's action, Rails conventionnally 
+# renders the template named `action.html.erb` in `app/views/resources`.
+# It thus means you forgot to generate action's associated view, that you 
+# misspelled its filename, or that you misplaced it.
 ````
 
 ## Conflicts solving
