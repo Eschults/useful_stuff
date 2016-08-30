@@ -53,10 +53,10 @@ search in project                          # cmd + shift + f
 add package                                # cmd + shift + p
 add indentation                            # tab
 remove indentation                         # shift + tab
-move text cursor to next word              # alt + →
-move text cursor to previous word          # alt + ←
-move text cursor to end of line            # cmd + →
-move text cursor to beginning of line      # cmd + ←
+reach next word                            # alt + →
+reach previous word                        # alt + ←
+reach end of line                          # cmd + →
+reach beginning of line                    # cmd + ←
 close tab                                  # cmd + w
 reopen last tab closed                     # cmd + shift + t
 navigate to tab on the right               # cmd + alt + →
@@ -69,9 +69,13 @@ open a new tab                             # cmd + t
 close tab                                  # cmd + w
 clear window (keeping history)             # ctrl + l
 clear window (losing history)              # cmd + k
+reach next word                            # alt + →
+reach previous word                        # alt + ←
 reach beginning of line                    # ctrl + a
 reach end of line                          # ctrl + e
 erase the whole line                       # ctrl + u
+navigate to tab on the right               # cmd + shift + →
+navigate to tab on the left                # cmd + shift + ←
 ```
 
 ### Chrome
@@ -86,6 +90,8 @@ open a new tab                             # cmd + t
 focus on address bar                       # cmd + l
 close tab                                  # cmd + w
 reopen last tab closed                     # cmd + shift + t
+
+hard refresh (clear cache)                 # cmd + shift + r
 ```
 
 ## Keyboard's shortcuts (LINUX)
