@@ -124,7 +124,7 @@ This can get tricky when you read it from a tiny terminal window, so start by op
 
 ```ruby
 # It means that `some_object` **on which you call** `.some_method` is not of the right type.
-# You'll get this error if you try to call a `String` instance method on a `Fixnum` for instance.
+# You'll get this error if you try to call a `String` instance method on a `Fixnum` for example.
 # Its most frequent expression is when `some_object` is nil:
 
 recipe.name
