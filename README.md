@@ -120,7 +120,7 @@ close tab                                  # ctrl + shift + w
 clear window                               # ctrl + L (or type "clear" in terminal)
 ```
 
-## Frequently misunderstood error messages
+## Common error messages
 The first advice I'll throw here is to **read patiently, entirely, twice** the error message when one occurs.
 This can get tricky when you read it from a tiny terminal window, so start by opening it wide to have a clear look at its face.
 
