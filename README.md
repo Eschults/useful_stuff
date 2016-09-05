@@ -22,6 +22,7 @@ Memo for my beloved students
   - [NameError: uninitialized constant ClassName](#nameerror-uninitialized-constant-classname)
   - [ResourcesController#action is missing a template for this request format and variant.](#resourcescontrolleraction-is-missing-a-template-for-this-request-format-and-variant)
 - [Conflicts solving](#conflicts-solving)
+- [Useful gems](#useful-gems)
 - [Going further](#going-further)
 
 ## Keyboard's shortcuts (Mac)
