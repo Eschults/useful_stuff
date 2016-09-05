@@ -248,6 +248,14 @@ git pull origin master
 git checkout -b next_feature
 ```
 
+## Useful gems
+
+#### [Acts as votable](https://github.com/ryanto/acts_as_votable)
+Perfect for like / upvote / save to wishlist features!
+#### [Public Activity](https://github.com/chaps-io/public_activity)
+A good framework to handle notifications.
+Check [this railscast](http://railscasts.com/episodes/406-public-activity) out to set it up in your project!
+
 ## Going further
 
 #### [10 common mistakes using Rails](https://www.toptal.com/ruby-on-rails/top-10-mistakes-that-rails-programmers-make)
