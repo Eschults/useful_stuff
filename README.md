@@ -22,6 +22,7 @@ Memo for my beloved students
   - [NameError: uninitialized constant ClassName](#nameerror-uninitialized-constant-classname)
   - [ResourcesController#action is missing a template for this request format and variant.](#resourcescontrolleraction-is-missing-a-template-for-this-request-format-and-variant)
 - [Conflicts solving](#conflicts-solving)
+- [Accidental commit to master](#fix-an-accidental-commit-to-master)
 - [Useful gems](#useful-gems)
 - [Going further](#going-further)
 
@@ -250,7 +251,7 @@ git checkout -b next_feature
 ```
 
 ## Fix an accidental commit to master
-When you committed some changes to `master` and wanted to commit them on a new branch, follow this process:
+When you committed some changes to `master` and wanted to commit them to a new branch, follow this process:
 
 ```ruby
 # create a new branch from the current state of master
