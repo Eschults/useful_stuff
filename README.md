@@ -249,6 +249,28 @@ git pull origin master
 git checkout -b next_feature
 ```
 
+## Fix an accidental commit to master
+When you committed some changes to `master` and wanted to commit them on a new branch, follow this process:
+
+```ruby
+# create a new branch from the current state of master
+git checkout -b some-new-branch-name
+
+# remove the commit from the master branch
+git checkout master
+git reset HEAD~ --hard
+
+# go back to your new branch
+git checkout some-new-branch-name
+# your commit lives in this branch now
+
+# if you want to make sure it does...
+git push origin some-new-branch-name
+
+# ...go check it out by yourself
+hub browse
+```
+
 ## Useful gems
 
 #### [Acts as votable](https://github.com/ryanto/acts_as_votable)
