@@ -44,6 +44,11 @@ reach beginning of line                    # ctrl + a
 reach end of line                          # ctrl + e
 ```
 
+#### Speed Up MAC keyboard (needs a restart)
+Enter the following in the CLI 
+`defaults write NSGlobalDomain KeyRepeat -int 0.02`
+`defaults write NSGlobalDomain InitialKeyRepeat -int 12`
+
 ### Keyboard's shortcuts (LINUX) 
 
 #### Sublime Text
