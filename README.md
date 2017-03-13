@@ -185,7 +185,7 @@ full_name("boris")
 
 #### `ActiveRecord::PendingMigrationError Migrations are pending`
 ```ruby
-# Just run `rails db:migate` in your terminal.
+# Just run `rails db:migrate` in your terminal.
 ```
 
 #### `PG::ConnectionBad - could not connect to server: No such file or directory Is the server running locally and accepting connections on Unix domain socket "/tmp/.s.PGSQL.5432"?`
