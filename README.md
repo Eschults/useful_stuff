@@ -47,6 +47,7 @@ from one window to another (same program)  # cmd + `
 ### Sublime Text
 ```ruby
 open a file in current project             # cmd + p (or cmd + t)
+paste with indentation                     # cmd + shift + v
 move a line upwards in file                # ctrl + cmd + ↑
 move a line downwards in file              # ctrl + cmd + ↓
 (un)comment lines                          # cmd + /
@@ -101,6 +102,7 @@ hard refresh (clear cache)                 # cmd + shift + r
 ### Sublime Text
 ```ruby
 open a file in current project             # ctrl + p
+paste with indentation                     # ctrl + shift + v
 move a line upwards in file                # ctrl + shift + ↑
 move a line downwards in file              # ctrl + shift + ↓
 (un)comment lines                          # ctrl + shift + :
