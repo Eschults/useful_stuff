@@ -219,7 +219,7 @@ rm /usr/local/var/postgres/postmaster.pid
 When you can't merge a PR due to conflicts in an `unmergeable_branch`, follow this process:
 
 ```ruby
-# first be sure your git status is clean on your current branch
+# first make sure your git status is clean on your current branch
 git status # if not clean, add and commit your work
 
 # go to your local master branch
