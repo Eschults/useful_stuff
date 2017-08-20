@@ -213,7 +213,28 @@ rm /usr/local/var/postgres/postmaster.pid
 # renders the template named `action.html.erb` in `app/views/resources`.
 # It thus means you forgot to generate action's associated view, that you 
 # misspelled its filename, or that you misplaced it.
-````
+```
+
+#### `Pundit::NotDefinedError in SomeController#some_action`
+
+```ruby
+# The policy is not defined for this controller!
+# just run rails g pundit:policy name_of_the_resource
+# be careful, name_of_the_resource should be singular!
+```
+
+#### `Pundit::AuthorizationNotPerformedError in SomeController#some_action`
+
+```ruby
+# You need to call authorize(@some_resource) in the action (in the controller)
+```
+
+#### `Pundit::NotAuthorizedError in SomeController#some_action`
+
+```ruby
+# The rule returns false, you should override ApplicationPolicy's rule by setting it in corresponding ResourcePolicy
+# Don't forget to rescue this error with a flash and a redirection at ApplicationController's level!
+```
 
 ## Conflicts solving
 When you can't merge a PR due to conflicts in an `unmergeable_branch`, follow this process:
