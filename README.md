@@ -21,6 +21,9 @@ Memo for my beloved students
   - [PG::ConnectionBad - could not connect to server: No such file or directory](#pgconnectionbad---could-not-connect-to-server-no-such-file-or-directory-is-the-server-running-locally-and-accepting-connections-on-unix-domain-socket-tmpspgsql5432)
   - [NameError: uninitialized constant ClassName](#nameerror-uninitialized-constant-classname)
   - [ResourcesController#action is missing a template for this request format and variant.](#resourcescontrolleraction-is-missing-a-template-for-this-request-format-and-variant)
+  - [Pundit::NotDefinedError in SomeController#some_action](#punditnotdefinederror-in-somecontrollersome_action)
+  - [Pundit::AuthorizationNotPerformedError in SomeController#some_action](#punditauthorizationnotperformederror-in-somecontrollersome_action)
+  - [Pundit::NotAuthorizedError in SomeController#some_action](#punditnotauthorizedderror-in-somecontrollersome_action)
 - [Conflicts solving](#conflicts-solving)
 - [Accidental commit to master](#fix-an-accidental-commit-to-master)
 - [Useful gems](#useful-gems)
@@ -219,14 +222,14 @@ rm /usr/local/var/postgres/postmaster.pid
 
 ```ruby
 # The policy is not defined for this controller!
-# just run rails g pundit:policy name_of_the_resource
-# be careful, name_of_the_resource should be singular!
+rails g pundit:policy **name_of_the_resource_in_singular**
 ```
 
 #### `Pundit::AuthorizationNotPerformedError in SomeController#some_action`
 
 ```ruby
-# You need to call authorize(@some_resource) in the action (in the controller)
+# You need to call `authorize(@some_resource)` in the action (in the controller)
+# Make sure you insert this line before saving the resource in your DB!
 ```
 
 #### `Pundit::NotAuthorizedError in SomeController#some_action`
