@@ -220,7 +220,7 @@ rm /usr/local/var/postgres/postmaster.pid
 
 #### `Pundit::NotDefinedError in SomeController#some_action`
 
-```ruby
+```bash
 # The policy is not defined for this controller!
 rails g pundit:policy **name_of_the_resource_in_singular**
 ```
