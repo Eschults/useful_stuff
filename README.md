@@ -67,6 +67,7 @@ close tab                                  # cmd + w
 reopen last tab closed                     # cmd + shift + t
 navigate to tab on the right               # cmd + alt + →
 navigate to tab on the left                # cmd + alt + ←
+duplicate line                             # cmd + shift + d
 ```
 
 ### Terminal
@@ -118,6 +119,7 @@ move text cursor to next word              # alt + →
 move text cursor to previous word          # alt + ←
 close tab                                  # ctrl + w
 reopen last tab closed                     # ctrl + shift + t
+duplicate line                             # ctrl + shift + d
 ```
 
 ### Terminal
