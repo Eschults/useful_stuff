@@ -276,6 +276,8 @@ Now it's time to make a last commit, create a pull request and go back to master
 (my-feature) git checkout master
 (master)     git pull origin master
 (master)     git sweep
+
+(master)     git checkout -b my-new-feature
 ```
 
 ### Getting latest changes from master
