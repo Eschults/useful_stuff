@@ -2,6 +2,7 @@
 Memo for my beloved students
 
 ## Summary
+
 - [Keyboard's shortcuts (Mac)](#keyboards-shortcuts-mac)
   - [Special characters](#special-characters)
   - [Navigate](#navigate)
@@ -24,8 +25,12 @@ Memo for my beloved students
   - [Pundit::NotDefinedError in SomeController#some_action](#punditnotdefinederror-in-somecontrollersome_action)
   - [Pundit::AuthorizationNotPerformedError in SomeController#some_action](#punditauthorizationnotperformederror-in-somecontrollersome_action)
   - [Pundit::NotAuthorizedError in SomeController#some_action](#punditnotauthorizedderror-in-somecontrollersome_action)
-- [Conflicts solving](#conflicts-solving)
-- [Accidental commit to master](#fix-an-accidental-commit-to-master)
+- [Mastering git](#mastering-git)
+  - [Starting a new feature](#starting-a-new-feature)
+  - [Finishing a feature](#finishing-a-feature)
+  - [Getting latest changes from master](#getting-latest-changes-from-master)
+  - [Conflicts solving](#conflicts-solving)
+  - [Accidental commit to master](#fix-an-accidental-commit-to-master)
 - [Useful gems](#useful-gems)
 - [Going further](#going-further)
 
@@ -150,7 +155,7 @@ recipe.name
 #### `TypeError: SomeType can't be coerced into SomeOtherType`
 
 ```ruby
-# It means that you're trying to mix apples and oranges. 
+# It means that you're trying to mix apples and oranges.
 
 1 + nil
 # => TypeError: nil can't be coerced into Fixnum
@@ -207,16 +212,16 @@ rm /usr/local/var/postgres/postmaster.pid
 #### `NameError: uninitialized constant ClassName`
 
 ```ruby
-# In most cases, you'll get this error message when you're implementing a gem 
+# In most cases, you'll get this error message when you're implementing a gem
 # and you forgot to restart your `rails server` after running `bundle install`.
 ```
 
 #### `ResourcesController#action is missing a template for this request format and variant.`
 
 ```ruby
-# After executing the code in a controller's action, Rails conventionnally 
+# After executing the code in a controller's action, Rails conventionnally
 # renders the template named `action.html.erb` in `app/views/resources`.
-# It thus means you forgot to generate action's associated view, that you 
+# It thus means you forgot to generate action's associated view, that you
 # misspelled its filename, or that you misplaced it.
 ```
 
@@ -241,7 +246,59 @@ rails g pundit:policy **name_of_the_resource_in_singular**
 # Don't forget to rescue this error with a flash and a redirection at ApplicationController's level!
 ```
 
-## Conflicts solving
+## Mastering git
+
+### Starting a new feature
+
+When you want to start a new feature.
+You have to create a new branch to work from:
+
+```
+(master) git status (CLEAN)
+(master) git checkout -b my-feature
+```
+
+### Finishing a feature
+
+You've just finished you feature.
+Now it's time to make a last commit, create a pull request and go back to master branch:
+
+```
+(my-feature) git add .
+(my-feature) git commit -m 'XXXX'
+(my-feature) git push origin my-feature
+
+(my-feature) git status (CLEAN)
+
+(my-feature) hub browse
+[GO CREATE A PULL REQUEST ON GITHUB]
+
+(my-feature) git checkout master
+(master)     git pull origin master
+(master)     git sweep
+
+(master)     git checkout -b my-new-feature
+```
+
+### Getting latest changes from master
+
+When you want to get the latest changes from master on my branch:
+
+```
+(my-feature) git add .
+(my-feature) git commit -m 'XXXX'
+
+(my-feature) git status (CLEAN)
+
+(my-feature) git checkout master
+(master)     git pull origin master
+
+(master)     git checkout my-feature
+(my-feature) git merge master
+```
+
+### Conflicts solving
+
 When you can't merge a PR due to conflicts in an `unmergeable_branch`, follow this process:
 
 ```ruby
@@ -281,7 +338,8 @@ git pull origin master
 git checkout -b next_feature
 ```
 
-## Fix an accidental commit to master
+### Fix an accidental commit to master
+
 When you committed some changes to `master` and wanted to commit them to a new branch, follow this process:
 
 ```ruby
