@@ -73,6 +73,9 @@ reopen last tab closed                     # cmd + shift + t
 navigate to tab on the right               # cmd + alt + →
 navigate to tab on the left                # cmd + alt + ←
 duplicate line                             # cmd + shift + d
+remove line                                # ctrl + shift + k
+split view into two columns                # cmd + option + 2
+split view into two rows                   # cmd + option + shift + 2
 ```
 
 ### Terminal
