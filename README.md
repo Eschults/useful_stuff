@@ -273,7 +273,7 @@ Now it's time to make a last commit, create a pull request and go back to master
 
 (my-feature) git status (CLEAN)
 
-(my-feature) hub browse
+(my-feature) gh repo view --web
 [GO CREATE A PULL REQUEST ON GITHUB]
 
 (my-feature) git checkout master
