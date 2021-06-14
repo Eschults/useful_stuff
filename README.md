@@ -6,11 +6,11 @@ Memo for my beloved students
 - [Keyboard's shortcuts (Mac)](#keyboards-shortcuts-mac)
   - [Special characters](#special-characters)
   - [Navigate](#navigate)
-  - [Sublime Text](#sublime-text)
+  - [Text Editor](#sublime-text)
   - [Terminal](#terminal)
   - [Chrome](#chrome)
 - [Keyboard's shortcuts (LINUX)](#keyboards-shortcuts-linux)
-  - [Sublime Text](#sublime-text-1)
+  - [Text Editor](#sublime-text-1)
   - [Terminal](#terminal-1)
 - [Frequently misunderstood error messages](#frequently-misunderstood-error-messages)
   - [NoMethodError: undefined method `some_method' for some_object:SomeType](#nomethoderror-undefined-method-some_method-for-some_objectsometype)
@@ -52,7 +52,7 @@ from one program to another                # cmd + tab
 from one window to another (same program)  # cmd + `
 ```
 
-### Sublime Text
+### Text Editor (Sublime Text or VS Code with Sublime Text Keymap)
 ```ruby
 open a file in current project             # cmd + p (or cmd + t)
 paste with indentation                     # cmd + shift + v
@@ -111,7 +111,7 @@ hard refresh (clear cache)                 # cmd + shift + r
 
 ## Keyboard's shortcuts (LINUX)
 
-### Sublime Text
+### Text Editor (Sublime Text or VS Code with Sublime Text Keymap)
 ```ruby
 open a file in current project             # ctrl + p
 paste with indentation                     # ctrl + shift + v
