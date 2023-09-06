@@ -43,7 +43,7 @@ Memo for my beloved students
 ] # alt + shift + )
 | # alt + shift + l
 ~ # alt + n
-\ # alt + /
+\ # alt + shift + /
 ```
 
 ### Navigate
